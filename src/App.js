@@ -6,8 +6,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Recepti from './components/Recepti';
 import { useState } from 'react';
 import Omiljeni from './components/Omiljeni';
+import CopyButton from "./components/CopyButton";
 
 function App() {
+  const telefon = "+3816884564";
+  const email = "zdravi.recepti@gmail.com";
+
+
   const [omiljeniR,setOmiljeniR]=useState([]);
 
   const[sviRecepti] = useState([
@@ -104,7 +109,11 @@ function App() {
             <Route path="/omiljeni" element={<Omiljeni kriterijum={krterijumPretrage}  recepti={omiljeniR}  izbaci={izbaci}></Omiljeni>}></Route>
         </Routes>
      </BrowserRouter>
-     <Footer></Footer>
+     <Footer> </Footer>
+     <div className="kontejner">
+    <CopyButton textToCopy={email}/> 
+    <CopyButton textToCopy={telefon} />
+    </div>
 
   </div>
   );

@@ -1,6 +1,7 @@
 *{
   font-family: 'Oswald', sans-serif;
 }
+
 .nav {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, #FFA45B 0%, #FFDA77 35%, #AEE6E6 100%);
@@ -13,9 +14,11 @@
 	top: 0;
   font-size: 20px;
 }
+
 .nav__title{
   margin: 0px 30px;
 }
+
 .nav__item{
   display: inline-block;
   margin: 0px 30px;
@@ -34,6 +37,7 @@ a{
 img{
   margin-left: -640px;
 }
+
 .nav input[type=text] {
   padding: 6px;
   margin-top: 8px;
@@ -43,6 +47,7 @@ img{
   color: #fff;
   border: solid 1px #fff;
 }
+
 .nav input[type=text]:focus {
 
   border: none;
@@ -200,7 +205,7 @@ h4{
     height: 95%;
   }
 
-  /* recepti */
+/* recepti */
 
   .row{
     padding: 3%;
@@ -220,15 +225,15 @@ h4{
   .card-img-top{
     border-radius: 10px;
     animation: animated-border 1.5s infinite;
-    height: 350px;
-    width: 575px;
+    height: 280px;
+    width: 400px;
     margin:10px;
   }
 
   .card{
     background-image: url("https://www.desktopbackground.org/download/540x960/2012/11/05/479213_light-blue-wallpapers-phone_2560x1600_h.jpg");
     padding: 8px;
-    inline-size: 600px;
+    inline-size: 410px;
     overflow: hidden;
     border-radius: 2%;
   }
@@ -262,14 +267,13 @@ h4{
 
   }
 
-  .btnDodaj, .btnIzbaci {
+  .btnDodaj , .btnIzbaci{
     background-color: #59c0d7;
-    font-size: 22px;
     padding: 10px;
+    font-size: 22px;
     border: none;
     color: #f1f1f1;
   }
-
   .btnDodaj:hover {
     background-color: #AEE6E6;
     padding: 10px;
@@ -287,3 +291,44 @@ h4{
     color: #f1f1f1;
     transform: scale(1.1);
   }
+
+  /*za dodatne dugmice kopiraj*/
+  .btn:hover{
+    cursor: pointer;
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+    }
+  
+  
+    .dugme-kopiranje{
+      background: rgb(82, 79, 79);
+      background-color: #FFA45B;
+      color: white; 
+      text-align: center;
+      margin-right: 140px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 15px;
+      border: #f1f1f1;
+      border-bottom: 2px;
+    }
+  
+    .dugme-kopiranje:hover{
+      background: rgb(255, 255, 255);
+      cursor: pointer;
+      color: #fff;
+      box-shadow: inset 200px 0 0 0 #54b3d6;
+      border: #f1f1f1;
+    }
+  
+    .kontejner{
+      background-color: #FFA45B;
+      opacity: 80%;
+      display:-ms-inline-grid;
+      justify-content: space-between;
+      padding-left: 850px;
+      padding-right: 100px;
+  
+    }
