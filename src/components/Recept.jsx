@@ -1,4 +1,4 @@
-function Recept({rec}) {
+function Recept({rec, dodaj}) {
 
 
     return (
@@ -7,7 +7,7 @@ function Recept({rec}) {
         <div className="card-body">
           <h5 className="card-title">{rec.naziv}</h5>
           <p className="card-text">{rec.opis} <br /> Kalorije: {rec.kalorije}<br /> Vreme pripreme: {rec.vreme + "min"}</p>
-          <a href="#" className="btnDodaj" style = {{margin: "15px", fontSize: "20px"}}>DODAJ</a>
+          <button className="btnDodaj" onClick={()=>dodaj(rec.id)}> DODAJ </button>
         </div>
       </div>
     );
