@@ -262,7 +262,7 @@ h4{
 
   }
 
-  .btnDodaj {
+  .btnDodaj, .btnIzbaci {
     background-color: #59c0d7;
     font-size: 22px;
     padding: 10px;
@@ -271,6 +271,15 @@ h4{
   }
 
   .btnDodaj:hover {
+    background-color: #AEE6E6;
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    color: #f1f1f1;
+    transform: scale(1.1);
+  }
+
+  .btnIzbaci:hover{
     background-color: #AEE6E6;
     padding: 10px;
     font-size: 22px;
